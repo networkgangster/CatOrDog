@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
+        setSupportActionBar(toolbar);
         TabLayout tabLayout = findViewById(R.id.tablayout);
         TabItem tabChats = findViewById(R.id.tabGalerie);
         TabItem tabStatus = findViewById(R.id.tabKamera);
@@ -28,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewPager);
 
         viewPager.setAdapter(pageAdapter);
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 }
