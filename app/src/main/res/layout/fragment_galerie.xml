@@ -48,6 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="206dp"
+            android:text="RICHTIG"
+            android:drawableLeft="@drawable/richtig"
             />
 
         <Button
